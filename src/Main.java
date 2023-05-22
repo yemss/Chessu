@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
 
-        HashMap<String, ArrayList<Integer>> mapVars = new HashMap<>();
         HashMap<Integer, String> mapPos = new HashMap<>();
 
         // initializing players
