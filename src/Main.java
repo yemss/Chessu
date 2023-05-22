@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
-
         HashMap<Integer, String> mapPos = new HashMap<>();
 
         // initializing players
@@ -32,15 +31,14 @@ public class Main {
                     System.out.printf("It's %s turn \n", player1.getName() + "'s");
                     player1.turn(sc);
                     player1.movePiecePos(mapPos, mapVars);
-                    System.out.printf("%s moved to %s", player1.getPiece(), player1.getPiecePos(mapVars.get(player1.getPiece()).get(player1.getNumber())));
+                    System.out.printf("%s moved to %s", player1.getPiece(), player1.getPiecePos(player1.getMapVars().get(player1.getPiece()).get(player1.getNumber())));
                 } else {
                     System.out.printf("It's %s turn \n", player2.getName() + "'s");
                     player1.turn(sc);
                     player2.movePiecePos(mapPos, mapVars);
-                    System.out.printf("%s moved to %s", player2.getPiece(), player2.getPiecePos(mapVars.get(player2.getPiece()).get(player2.getNumber())));
+                    System.out.printf("%s moved to %s", player2.getPiece(), player2.getPiecePos(player1.getMapVars().get(player2.getPiece()).get(player2.getNumber())));
                 }
             }
         }
     }
 }
-
