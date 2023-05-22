@@ -18,9 +18,9 @@ public class Main {
         // put pieces in default positions
         player1.setDefaultPos();
         System.out.println("def positions: " + player1.getPiecePos().toString());
-        System.out.println("def positions: " + player1.getPiecePos().toString());
         player2.setDefaultPos();
-
+        System.out.println("def positions: " + player2.getPiecePos().toString());
+        
         // mapping positions to selected piece
         int turn = 0;
         if (player1.getId() == player2.getId()) {
