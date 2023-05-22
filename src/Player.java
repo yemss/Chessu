@@ -104,6 +104,10 @@ public class Player {
         return queen;
     }
    */
+    
+    public HashMap<String, ArrayList<Integer>> getMapVars() {
+        return mapVars;
+    }
 
     public void setDefaultPos() {
         for (int i = 0; i < chessBoard[0].length; i++) {
